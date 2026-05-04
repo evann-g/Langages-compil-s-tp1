@@ -1,0 +1,54 @@
+ex 1.2
+
+1) il a mis tous ce qu'importe la librairy stdio.h
+define message a directement été suprime et son contenue apliqué
+le fichier fait 1043 ligne
+
+2) on peut reconnaitre le "Bonjour YNOV !"
+un programme informatique qui traduit le code du langage d'assemblage en code machine, permettant une communication directe avec le matériel d'un ordinateur.
+
+3) l'un est long et executable l'autre et cour est non executable
+
+4) gcc -E hello.c -o hello.i && gcc -S hello.c -o hello.s && gcc -c hello.c -o hello.o && gcc hello.o -o hello
+
+ex 2.2
+
+1) on obtient cette erreur.
+test_options.c: In function 'main':
+test_options.c:3:9: warning: unused variable 'x' [-Wunused-variable]
+    3 |     int x;
+      |         ^
+il signifit que x n'est pas utiliser
+
+2) définir la variable x
+
+3) les ignorer, c’est prendre le risque de bugs subtils .
+
+
+ex 3.3
+
+Q) ce ne sont pas les mêmes ,Le langage C ne fixe pas des tailles exactes pour tous les types. Il impose seulement des contraintes minimales
+
+5.2
+
+1)un entier ne peut pas etre une chaine de caractère
+erreurs.c: In function 'main':
+erreurs.c:4:13: error: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+    4 |     int x = "hello";
+      |    
+
+2)il n'y a pas de ; a la fin du print 
+erreurs.c: In function 'main':
+erreurs.c:5:25: error: expected ';' before 'return'
+    5 |     printf("maFonction")
+      |                         ^
+      |                         ;
+    6 |     return 0;
+      |     
+
+3)une fonction est appeler alors qu'elle existe pas
+erreurs.c: In function 'main':
+erreurs.c:6:5: error: implicit declaration of function 'mafonction' [-Wimplicit-function-declaratio]
+    6 |     mafonction();
+      |     ^~~~~~~~~~
+
