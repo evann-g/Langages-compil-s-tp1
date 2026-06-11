@@ -1,0 +1,14 @@
+1.2 )
+1)les addresses de a, b, c sont generalemnt proches et souvent consecutives sur la pile.
+la difference correspond a la taille d'un int (généralement 4 octets).
+
+2)Sur la plupart des machines x86/x86_64, la pile grandit vers les
+adresses plus faibles.
+
+3) Elle est détruite et son espace mémoire peut être réutilisé par d'autres appels de fonction.
+
+2.2)
+
+programe A , le for cap le i à 5 et non a 4 car il prend si chiffre ce qui ferra une erreur
+
+programe B!
